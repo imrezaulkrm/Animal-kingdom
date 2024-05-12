@@ -324,6 +324,7 @@ h4{
     display: flex;
     padding: 0.25em; 
     margin-right: 0.5em;
+    display: none;
 }
     
 .logo a {
@@ -443,6 +444,7 @@ nav .fly-item,
     padding: 1.3em;
     height: 60px;
     width: 60px;
+    display: none;
 }
 
 .dpt-menu > ul > li > a {

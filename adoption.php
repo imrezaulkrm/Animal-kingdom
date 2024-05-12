@@ -24,14 +24,14 @@ if(isset($_POST['add_adoption'])) {
    }
 
    if(mysqli_num_rows($select_product_name) > 0) {
-       $message[] = 'Product name already added';
+       $message[] = 'Your Adoption Request Submitted';
    } else {
        // Insert new product into the database
        $insert_query = "INSERT INTO `adop_massage` (name, email, number, massage) VALUES ('$name', '$email', '$number', '$massage')";
        $add_product_query = mysqli_query($conn, $insert_query);
 
        if($add_product_query) {
-           $message[] = 'Product added successfully!';
+           $message[] = 'Your Adoption Request Submitted';
        } else {
            $message[] = 'Product could not be added!';
        }
@@ -93,7 +93,7 @@ if(isset($_POST['add_to_cart'])){
    </form>
 
 </section>
-<div class="features">
+        <div class="features">
             <div class="container">
                 <div class="wrapper">
                     <div class="column">
@@ -106,34 +106,33 @@ if(isset($_POST['add_to_cart'])){
                                 if(mysqli_num_rows($select_adoption) > 0){
                                     while($fetch_adoption = mysqli_fetch_assoc($select_adoption)){
                             ?>
-                            <!-- Inside the loop for displaying adoption products -->
-<form action="" method="post">
-    <div class="item">
-        <!-- Media content -->
-        <div class="content">
-            <!-- Product name -->
-            <h3 class="main-links"><a href="#"><?php echo $fetch_adoption['name']; ?></a></h3>
-            <div class="rrr">
-                <div class="price">
-                    <!-- Display current and normal price -->
-                    <span class="current"><?php echo $fetch_adoption['oprice']; ?> TAKA</span>
-                    <span class="normal mini-text"><?php echo $fetch_adoption['price']; ?> TAKA</span>
-                </div>
-            </div>
-            <div class="quintity" style="display:flex;">
-                <!-- Hidden fields for product details -->
-                <input type="hidden" name="product_name" value="<?php echo $fetch_adoption['name']; ?>">
-                <input type="hidden" name="product_price" value="<?php echo $fetch_adoption['price']; ?>">
-                <input type="hidden" name="product_image" value="<?php echo $fetch_adoption['image']; ?>">    
-                <!-- Quantity input field -->
-                <input type="number" min="1" name="product_quantity" value="1" style="width: 115px;">
-                <!-- Add to cart button -->
-                <input type="submit" value="add to cart" name="add_to_cart" class="primary-button mini-button" style="margin-left: 10px;">
-            </div>
-        </div>
-    </div>
-</form>
-
+                            <form action="" method="post">
+                            <div class="item">
+                                <div class="media ">
+                                    <div class="thumbnail object-cover-1">
+                                        <a href="#">
+                                            <img src="uploaded_img/<?php echo $fetch_adoption['image']; ?>" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <h3 class="main-links"><a href="#"><?php echo $fetch_adoption['name']; ?></a></h3>
+                                    <div class="rrr">
+                                        <div class="price">
+                                            <span class="current"><?php echo $fetch_adoption['oprice']; ?> TAKA</span>
+                                        </div>
+                                    </div>
+                                    <div class="quintity" style="display:flex;">
+                                        <input type="hidden" name="product_name" value="<?php echo $fetch_adoption['name']; ?>">
+                                        <input type="hidden" name="product_price" value="<?php echo $fetch_adoption['oprice']; ?>">
+                                        <input type="hidden" name="product_image" value="<?php echo $fetch_adoption['image']; ?>">    
+                                        <input type="number" min="1" name="product_quantity" value="1" style="width: 115px;">
+                                        <input type="submit" value="add to cart" name="add_to_cart" class="primary-button mini-button" style="margin-left: 10px;">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            </form>
                             <?php
                                     }
                                 }else{
@@ -145,7 +144,6 @@ if(isset($_POST['add_to_cart'])){
                 </div>
             </div>
         </div>
-
 
 
 

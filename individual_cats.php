@@ -12,7 +12,7 @@ if(!isset($user_id)){
 
 if(isset($_GET['product_id'])) {
     $product_id = $_GET['product_id'];
-    $query = "SELECT * FROM `dogs` WHERE id = '$product_id'";
+    $query = "SELECT * FROM `cats` WHERE id = '$product_id'";
     $result = mysqli_query($conn, $query);
     if(mysqli_num_rows($result) > 0) {
         $product = mysqli_fetch_assoc($result);

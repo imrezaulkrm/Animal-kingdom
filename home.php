@@ -345,6 +345,7 @@ if(isset($_POST['add_to_cart'])){
                                 </div>
                                 <div class="content">
                                     <h3 class="main-links"><a href="individual_dogs.php?product_id=<?php echo $fetch_dogs['id']; ?>"><?php echo $fetch_dogs['name']; ?></a></h3>
+                                    <p style="font-weight: 5px; color:rgb(59, 58, 58); font-size: 12px;"><?php echo $fetch_dogs['gname']; ?></i></p>
                                     <div class="rrr">
                                         <div class="price">
                                             <span class="current"><?php echo $fetch_dogs['oprice']; ?> TAKA</span>

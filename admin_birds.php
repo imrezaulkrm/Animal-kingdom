@@ -187,7 +187,7 @@ if(isset($_POST['update_product'])){
       <input type="number" name="update_price" value="<?php echo $fetch_update['price']; ?>" min="0" class="box" required placeholder="Enter product price">
       <input type="file" class="box" name="update_image" accept="image/jpg, image/jpeg, image/png">
       <input type="submit" value="update" name="update_product" class="btn">
-      <input type="reset" value="cancel" id="close-update" class="option-btn">
+      <input type="reset" value="cancel" id="close-update" class="option-btn" href="admin_birds.php">
    </form>
    <?php
          }
@@ -199,6 +199,12 @@ if(isset($_POST['update_product'])){
 
 </section>
 
+<script>
+   document.querySelector('#close-update').onclick = () =>{
+   document.querySelector('.edit-product-form').style.display = 'none';
+   window.location.href = 'admin_birds.php';
+}
+</script>
 
 
 

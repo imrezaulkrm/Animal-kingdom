@@ -60,9 +60,6 @@ if(isset($_POST['add_to_cart'])){
                     <div class="right">
                         <div class="search-box">
                             <form action="" class="search">
-                                <span class="icon-large"><i class="risearch-line"></i></span>
-                                <input type="search" placeholder="Search for Products">
-                                <button type="submit">Search</button>
                             </form>
                         </div>
                     </div>
@@ -91,13 +88,13 @@ if(isset($_POST['add_to_cart'])){
                             <div class="item">
                                 <div class="media ">
                                     <div class="thumbnail object-cover-1">
-                                        <a href="#">
+                                        <a href="individual_dogs.php?product_id=<?php echo $fetch_dogs['id']; ?>">
                                             <img src="uploaded_img/<?php echo $fetch_dogs['image']; ?>" alt="">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="content">
-                                    <h3 class="main-links"><a href="#"><?php echo $fetch_dogs['name']; ?></a></h3>
+                                    <h3 class="main-links"><a href="individual_dogs.php?product_id=<?php echo $fetch_dogs['id']; ?>"><?php echo $fetch_dogs['name']; ?></a></h3>
                                     <div class="rrr">
                                         <div class="price">
                                             <span class="current"><?php echo $fetch_dogs['oprice']; ?> TAKA</span>

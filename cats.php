@@ -36,7 +36,7 @@ if(isset($_POST['add_to_cart'])){
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=cats-width, initial-scale=1.0">
     <title>AnimalKingdom</title>
    <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
@@ -56,12 +56,10 @@ if(isset($_POST['add_to_cart'])){
         <div class="header-main mobile-hide">
             <div class="container">
                 <div class="wrapper flexitem">
+                    
                     <div class="right">
                         <div class="search-box">
                             <form action="" class="search">
-                                <span class="icon-large"><i class="risearch-line"></i></span>
-                                <input type="search" placeholder="Search for cats">
-                                <button type="submit">Search</button>
                             </form>
                         </div>
                     </div>
@@ -69,16 +67,18 @@ if(isset($_POST['add_to_cart'])){
             </div>
         </div>
     </header>
+
     <?php include 'header1.php'; ?>
+
     
     <div class="features">
             <div class="container">
                 <div class="wrapper">
                     <div class="column">
                         <div class="sectop flexitem">
-                            <h2 style="text-align: center;"><span class="circle" style="text-align: center;"></span><span>Cats</span></h2>
+                            <h2 style="text-align: center;"><span class="circle" style="text-align: center;"></span><span>cats</span></h2>
                         </div>
-                        <div class="cats main flexwrap">
+                        <div class="products main flexwrap">
                             <?php  
                                 $select_cats = mysqli_query($conn, "SELECT * FROM `cats` ") or die('query failed');
                                 if(mysqli_num_rows($select_cats) > 0){
@@ -88,15 +88,13 @@ if(isset($_POST['add_to_cart'])){
                             <div class="item">
                                 <div class="media ">
                                     <div class="thumbnail object-cover-1">
-                                        <a href="#">
+                                        <a href="individual_cats.php?product_id=<?php echo $fetch_cats['id']; ?>">
                                             <img src="uploaded_img/<?php echo $fetch_cats['image']; ?>" alt="">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="content">
-                                    <h3 class="main-links"><a href="#"><?php echo $fetch_cats['name']; ?></a></h3>
-                                    
-                                    <p style="font-weight: 5px; color:rgb(59, 58, 58); font-size: 12px;"><i><?php echo $fetch_cats['gname']; ?></i></p>
+                                    <h3 class="main-links"><a href="individual_cats.php?product_id=<?php echo $fetch_cats['id']; ?>"><?php echo $fetch_cats['name']; ?></a></h3>
                                     <div class="rrr">
                                         <div class="price">
                                             <span class="current"><?php echo $fetch_cats['oprice']; ?> TAKA</span>
@@ -109,6 +107,7 @@ if(isset($_POST['add_to_cart'])){
                                         <input type="hidden" name="product_image" value="<?php echo $fetch_cats['image']; ?>">    
                                         <input type="number" min="1" name="product_quantity" value="1" style="width: 115px;">
                                         <input type="submit" value="add to cart" name="add_to_cart" class="primary-button mini-button" style="margin-left: 10px;">
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -116,7 +115,7 @@ if(isset($_POST['add_to_cart'])){
                             <?php
                                     }
                                 }else{
-                                    echo '<p class="empty">no cats added yet!</p>';
+                                    echo '<p class="empty">no products added yet!</p>';
                                 }
                             ?>
                         </div>
