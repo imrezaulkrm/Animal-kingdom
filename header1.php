@@ -10,7 +10,7 @@
                         <li class="has-child"><a href="birds.php">Birds</a></li>
                         <li class="has-child"><a href="fishs.php">Fishs</a></li>
                         <li class="has-child"><a href="rabbits.php">Rabbits</a></li>
-                        <li class="has-child"><a href="rets.php">Rets</a></li>
+                        <li class="has-child"><a href="rets.php">Rats</a></li>
                         <li class="has-child"><a href="toys.php">Toys</a></li>
                         <li class="has-child"><a href="foods.php">Foods</a></li>
                         <li class="has-child"><a href="pets.php">Pets Accessories</a></li>

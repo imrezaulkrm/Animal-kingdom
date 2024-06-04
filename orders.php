@@ -33,6 +33,21 @@ if(!isset($user_id)){
 <body>
    
 <?php include 'header.php'; ?>
+<header>
+        <div class="header-main mobile-hide">
+            <div class="container">
+                <div class="wrapper flexitem">
+                    
+                    <div class="right">
+                        <div class="search-box">
+                            <form action="" class="search">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 <?php include 'header1.php'; ?>
 
 <section class="placed-orders">

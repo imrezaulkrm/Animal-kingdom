@@ -32,6 +32,21 @@ if(!isset($user_id)){
 <body>
    
 <?php include 'header.php'; ?>
+<header>
+        <div class="header-main mobile-hide">
+            <div class="container">
+                <div class="wrapper flexitem">
+                    
+                    <div class="right">
+                        <div class="search-box">
+                            <form action="" class="search">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 <?php include 'header1.php'; ?>
 
 <div class="heading">
@@ -43,13 +58,13 @@ if(!isset($user_id)){
    <div class="flex">
 
       <div class="image">
-         <img src="assets/images/about-img.jpg" alt="">
+         <img src="assets/images/about-img.jpeg" alt="">
       </div>
 
       <div class="content">
          <h3>why choose us?</h3>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet voluptatibus aut hic molestias, reiciendis natus fuga, cumque excepturi veniam ratione iure. Excepturi fugiat placeat iusto facere id officia assumenda temporibus?</p>
-         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit quos enim minima ipsa dicta officia corporis ratione saepe sed adipisci?</p>
+         <p>
+         Welcome to our pet paradise! At Animal Kingdom, we're dedicated to serving all your pet needs under one virtual roof. Whether you're a proud parent to a cuddly cat, a loyal dog, or a serene fish, we've got you covered. From essential medicines to the latest toys and accessories, we offer a diverse range of products to keep your furry friends happy and healthy. But we're more than just a pet store; we're a haven for animal lovers. With our adoption services, we aim to unite pets with their forever families, spreading love and joy one adoption at a time. And for those times when life gets busy, our top-notch pet daycare services ensure your beloved companions receive the attention and care they deserve. Join our community of passionate pet enthusiasts today and let's make tails wag and purrs rumble together!</p>
          <a href="contact.php" class="btn">contact us</a>
       </div>
 
@@ -64,8 +79,8 @@ if(!isset($user_id)){
    <div class="box-container">
 
       <div class="box">
-         <img src="assets/images/pic-1.png" alt="">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ad, quo labore fugiat nam accusamus quia. Ducimus repudiandae dolore placeat.</p>
+         <img src="assets/images/rezaul.jpg" alt="">
+         <p>Animal Kingdom offers a comprehensive range of pet products and services, including toys, accessories, medicine, adoption, and daycare.</p>
          <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -73,12 +88,12 @@ if(!isset($user_id)){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Md Rezaul Karim</h3>
       </div>
 
       <div class="box">
-         <img src="assets/images/pic-2.png" alt="">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ad, quo labore fugiat nam accusamus quia. Ducimus repudiandae dolore placeat.</p>
+         <img src="assets/images/ismail.jpg" alt="">
+         <p>Your one-stop destination for all your pet needs, from toys and accessories to adoption and daycare services.</p>
          <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -86,12 +101,12 @@ if(!isset($user_id)){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Md Ismail Hossain Khan </h3>
       </div>
 
       <div class="box">
-         <img src="assets/images/pic-3.png" alt="">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ad, quo labore fugiat nam accusamus quia. Ducimus repudiandae dolore placeat.</p>
+         <img src="assets/images/asha.jpg" alt="">
+         <p>Animal Kingdom provides everything a pet owner needs, from toys to adoption services, in one convenient online platform.</p>
          <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -99,12 +114,13 @@ if(!isset($user_id)){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Tamanna Asha</h3>
       </div>
 
       <div class="box">
-         <img src="assets/images/pic-4.png" alt="">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ad, quo labore fugiat nam accusamus quia. Ducimus repudiandae dolore placeat.</p>
+         <img src="assets/images/shanto.jpg" alt="">
+         <p>
+            Animal Kingdom provides a comprehensive range of pet products and services, including adoption and daycare, in a user-friendly platform.</p>
          <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -112,12 +128,14 @@ if(!isset($user_id)){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Md Anamul Hasan </h3>
       </div>
 
       <div class="box">
-         <img src="assets/images/pic-5.png" alt="">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ad, quo labore fugiat nam accusamus quia. Ducimus repudiandae dolore placeat.</p>
+         <img src="assets/images/mahanaj.jpg" alt="">
+         <p>
+         Where every pet's needs find a comprehensive solution online, from playful toys to compassionate adoption services.
+         </p>
          <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -125,12 +143,12 @@ if(!isset($user_id)){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Mahanaj Begum</h3>
       </div>
 
       <div class="box">
-         <img src="assets/images/pic-6.png" alt="">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ad, quo labore fugiat nam accusamus quia. Ducimus repudiandae dolore placeat.</p>
+         <img src="assets/images/uma.jpg" alt="">
+         <p>Animal Kingdom's website offers a delightful array of pet products and services, ensuring every pet owner finds what they need with ease.</p>
          <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -138,95 +156,11 @@ if(!isset($user_id)){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Umeyasing Marma</h3>
       </div>
 
-   </div>
 
 </section>
-
-<section class="authors">
-
-   <h1 class="title">greate authors</h1>
-
-   <div class="box-container">
-
-      <div class="box">
-         <img src="assets/images/author-1.jpg" alt="">
-         <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-instagram"></a>
-            <a href="#" class="fab fa-linkedin"></a>
-         </div>
-         <h3>john deo</h3>
-      </div>
-
-      <div class="box">
-         <img src="assets/images/author-2.jpg" alt="">
-         <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-instagram"></a>
-            <a href="#" class="fab fa-linkedin"></a>
-         </div>
-         <h3>john deo</h3>
-      </div>
-
-      <div class="box">
-         <img src="assets/images/author-3.jpg" alt="">
-         <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-instagram"></a>
-            <a href="#" class="fab fa-linkedin"></a>
-         </div>
-         <h3>john deo</h3>
-      </div>
-
-      <div class="box">
-         <img src="assets/images/author-4.jpg" alt="">
-         <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-instagram"></a>
-            <a href="#" class="fab fa-linkedin"></a>
-         </div>
-         <h3>john deo</h3>
-      </div>
-
-      <div class="box">
-         <img src="assets/images/author-5.jpg" alt="">
-         <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-instagram"></a>
-            <a href="#" class="fab fa-linkedin"></a>
-         </div>
-         <h3>john deo</h3>
-      </div>
-
-      <div class="box">
-         <img src="assets/images/author-6.jpg" alt="">
-         <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-instagram"></a>
-            <a href="#" class="fab fa-linkedin"></a>
-         </div>
-         <h3>john deo</h3>
-      </div>
-
-   </div>
-
-</section>
-
-
-
-
-
-
-
 <?php include 'footer.php'; ?>
 
 <!-- custom js file link  -->

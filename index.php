@@ -91,6 +91,12 @@ include 'config.php';
                             <ul class="flexitem second-links">
                                 <li><a href="index.php">Home</a></li>
                                 <li class="has-child">
+                                    <a href="adoption.php">Adoption</a>
+                                </li>
+                                <li class="has-child">
+                                    <a href="grooming.php">Day Care</a>
+                                </li>
+                                <li class="has-child">
                                     <a href="contact.php">Contact</a>
                                 </li>
                                 <li class="has-child">
@@ -206,7 +212,7 @@ include 'config.php';
                                     <li>
                                         <a href="rets.php">
                                             <div class="icon-large"><span class="material-symbols-outlined">pest_control_rodent</span></div>
-                                            Rets
+                                            Rats
                                         </a>
                                     </li>
                                     <li>

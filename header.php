@@ -86,7 +86,7 @@ if(isset($message)){
                                     <a href="adoption.php">Adoption</a>
                                 </li>
                                 <li class="has-child">
-                                    <a href="grooming.php">Grooming</a>
+                                    <a href="grooming.php">Day Care</a>
                                 </li>
                                 <li class="has-child">
                                     <a href="contact.php">Contact</a>

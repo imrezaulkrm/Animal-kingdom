@@ -139,7 +139,7 @@ if(isset($_POST['add_to_cart'])){
                                     <li>
                                         <a href="rets.php">
                                             <div class="icon-large"><span class="material-symbols-outlined">pest_control_rodent</span></div>
-                                            Rets
+                                            Rats
                                         </a>
                                     </li>
                                     <li>
@@ -281,13 +281,13 @@ if(isset($_POST['add_to_cart'])){
                             <div class="item">
                                 <div class="media ">
                                     <div class="thumbnail object-cover-1">
-                                    <a href="individual.php?product_id=<?php echo $fetch_cats['id']; ?>">
+                                    <a href="individual_cats.php?product_id=<?php echo $fetch_cats['id']; ?>">
                                             <img src="uploaded_img/<?php echo $fetch_cats['image']; ?>" alt="">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="content">
-                                    <h3 class="main-links"><a href="individual.php?product_id=<?php echo $fetch_cats['id']; ?>"><?php echo $fetch_cats['name']; ?></a></h3>
+                                    <h3 class="main-links"><a href="individual_cats.php?product_id=<?php echo $fetch_cats['id']; ?>"><?php echo $fetch_cats['name']; ?></a></h3>
                                     
                                     <p style="font-weight: 5px; color:rgb(59, 58, 58); font-size: 12px;"><?php echo $fetch_cats['gname']; ?></i></p>
                                     <div class="rrr">
@@ -381,7 +381,7 @@ if(isset($_POST['add_to_cart'])){
                         <div class="sectop flexitem">
                             <h2><span class="circle"></span><span>Birds</span></h2>
                             <div class="second-links">
-                                <a href="dogs.php" class="view-all">View all<i class="ri-arrow-right-line"></i></a>
+                                <a href="birds.php" class="view-all">View all<i class="ri-arrow-right-line"></i></a>
                             </div>
                         </div>
                         <div class="products main flexwrap">
@@ -394,13 +394,13 @@ if(isset($_POST['add_to_cart'])){
                             <div class="item">
                                 <div class="media ">
                                     <div class="thumbnail object-cover-1">
-                                    <a href="individual.php?product_id=<?php echo $fetch_birds['id']; ?>">
+                                    <a href="individual_birds.php?product_id=<?php echo $fetch_birds['id']; ?>">
                                             <img src="uploaded_img/<?php echo $fetch_birds['image']; ?>" alt="">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="content">
-                                    <h3 class="main-links"><a href="individual.php?product_id=<?php echo $fetch_birds['id']; ?>"><?php echo $fetch_birds['name']; ?></a></h3>
+                                    <h3 class="main-links"><a href="individual_birds.php?product_id=<?php echo $fetch_birds['id']; ?>"><?php echo $fetch_birds['name']; ?></a></h3>
                                     <div class="rrr">
                                         <div class="price">
                                             <span class="current"><?php echo $fetch_birds['oprice']; ?> TAKA</span>
@@ -436,7 +436,7 @@ if(isset($_POST['add_to_cart'])){
                         <div class="sectop flexitem">
                             <h2><span class="circle"></span><span>Fishs</span></h2>
                             <div class="second-links">
-                                <a href="dogs.php" class="view-all">View all<i class="ri-arrow-right-line"></i></a>
+                                <a href="fishs.php" class="view-all">View all<i class="ri-arrow-right-line"></i></a>
                             </div>
                         </div>
                         <div class="products main flexwrap">
@@ -449,13 +449,13 @@ if(isset($_POST['add_to_cart'])){
                             <div class="item">
                                 <div class="media ">
                                     <div class="thumbnail object-cover-1">
-                                        <a href="#">
+                                        <a href="individual_fishs.php?product_id=<?php echo $fetch_birds['id']; ?>">
                                             <img src="uploaded_img/<?php echo $fetch_fishs['image']; ?>" alt="">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="content">
-                                    <h3 class="main-links"><a href="#"><?php echo $fetch_fishs['name']; ?></a></h3>
+                                    <h3 class="main-links"><a href="individual_fishs.php?product_id=<?php echo $fetch_birds['id']; ?>"><?php echo $fetch_fishs['name']; ?></a></h3>
                                     <div class="rrr">
                                         <div class="price">
                                             <span class="current"><?php echo $fetch_fishs['oprice']; ?> TAKA</span>

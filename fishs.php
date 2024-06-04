@@ -36,7 +36,7 @@ if(isset($_POST['add_to_cart'])){
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=fishs-width, initial-scale=1.0">
     <title>AnimalKingdom</title>
    <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
@@ -51,11 +51,12 @@ if(isset($_POST['add_to_cart'])){
 </head>
 <body>
 <?php include 'header.php'; ?>
-<div id="page" class="site page-single">
+    <div id="page" class="site page-single">
     <header>
         <div class="header-main mobile-hide">
             <div class="container">
                 <div class="wrapper flexitem">
+                    
                     <div class="right">
                         <div class="search-box">
                             <form action="" class="search">
@@ -66,7 +67,9 @@ if(isset($_POST['add_to_cart'])){
             </div>
         </div>
     </header>
+
     <?php include 'header1.php'; ?>
+
     
     <div class="features">
             <div class="container">

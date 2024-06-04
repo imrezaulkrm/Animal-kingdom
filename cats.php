@@ -76,7 +76,7 @@ if(isset($_POST['add_to_cart'])){
                 <div class="wrapper">
                     <div class="column">
                         <div class="sectop flexitem">
-                            <h2 style="text-align: center;"><span class="circle" style="text-align: center;"></span><span>cats</span></h2>
+                            <h2 style="text-align: center;"><span class="circle" style="text-align: center;"></span><span>Cats</span></h2>
                         </div>
                         <div class="products main flexwrap">
                             <?php  

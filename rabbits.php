@@ -36,7 +36,7 @@ if(isset($_POST['add_to_cart'])){
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=rabbits-width, initial-scale=1.0">
     <title>AnimalKingdom</title>
    <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
@@ -56,12 +56,10 @@ if(isset($_POST['add_to_cart'])){
         <div class="header-main mobile-hide">
             <div class="container">
                 <div class="wrapper flexitem">
+                    
                     <div class="right">
                         <div class="search-box">
                             <form action="" class="search">
-                                <span class="icon-large"><i class="risearch-line"></i></span>
-                                <input type="search" placeholder="Search for Products">
-                                <button type="submit">Search</button>
                             </form>
                         </div>
                     </div>
@@ -69,7 +67,9 @@ if(isset($_POST['add_to_cart'])){
             </div>
         </div>
     </header>
+
     <?php include 'header1.php'; ?>
+
     
     <div class="features">
             <div class="container">
@@ -88,13 +88,13 @@ if(isset($_POST['add_to_cart'])){
                             <div class="item">
                                 <div class="media ">
                                     <div class="thumbnail object-cover-1">
-                                        <a href="#">
+                                        <a href="individual_rabbits.php?product_id=<?php echo $fetch_rabbits['id']; ?>">
                                             <img src="uploaded_img/<?php echo $fetch_rabbits['image']; ?>" alt="">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="content">
-                                    <h3 class="main-links"><a href="#"><?php echo $fetch_rabbits['name']; ?></a></h3>
+                                    <h3 class="main-links"><a href="individual_rabbits.php?product_id=<?php echo $fetch_rabbits['id']; ?>"><?php echo $fetch_rabbits['name']; ?></a></h3>
                                     <div class="rrr">
                                         <div class="price">
                                             <span class="current"><?php echo $fetch_rabbits['oprice']; ?> TAKA</span>
