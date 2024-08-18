@@ -106,34 +106,6 @@ if(isset($_POST['add_to_cart'])){
                                 <img id="zoom1" src="uploaded_img/<?php echo $product['image']; ?>" alt="<?php echo $product['name']; ?>">
                             </a>
                         </div>
-                        <div class="single-zoom-thumb">
-                            <ul class="s-tab-zoom owl-carousel single-product-active" id="gallery_01">
-                                <li >
-                                    <a href="#" class="elevatezoom-gallery active" data-update="" data-image="uploaded_img/<?php echo $product['image']; ?>" data-zoom-image="uploaded_img/<?php echo $product['image']; ?>">
-                                        <img src="uploaded_img/<?php echo $product['image']; ?>" alt="zo-th-1"/>
-                                    </a>
-
-                                </li>
-                                <li >
-                                    <a href="#" class="elevatezoom-gallery active" data-update="" data-image="uploaded_img/<?php echo $product['image']; ?>" data-zoom-image="uploaded_img/<?php echo $product['image']; ?>">
-                                        <img src="uploaded_img/<?php echo $product['image']; ?>" alt="zo-th-1"/>
-                                    </a>
-
-                                </li>
-                                <li >
-                                    <a href="#" class="elevatezoom-gallery active" data-update="" data-image="uploaded_img/<?php echo $product['image']; ?>" data-zoom-image="uploaded_img/<?php echo $product['image']; ?>">
-                                        <img src="uploaded_img/<?php echo $product['image']; ?>" alt="zo-th-1"/>
-                                    </a>
-
-                                </li>
-                                <li >
-                                    <a href="#" class="elevatezoom-gallery active" data-update="" data-image="uploaded_img/<?php echo $product['image']; ?>" data-zoom-image="uploaded_img/<?php echo $product['image']; ?>">
-                                        <img src="uploaded_img/<?php echo $product['image']; ?>" alt="zo-th-1"/>
-                                    </a>
-
-                                </li>
-                            </ul>
-                        </div>
                         <!-- Additional images, if available -->
                         <!-- Add your code for additional images here -->
                     </div>
